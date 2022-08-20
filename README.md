@@ -1,0 +1,1 @@
+a landing page for my application wraw written in solidjs

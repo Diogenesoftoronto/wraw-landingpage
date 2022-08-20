@@ -1,0 +1,15 @@
+{
+  "name": "wraw-landingpage",
+  "version": "1.0.0",
+  "description": "a landing page for wraw built with solidjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "diogenesoftoronto",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.6.0",
+    "jest": "^28.1.3"
+  }
+}
