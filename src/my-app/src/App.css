@@ -1,3 +1,58 @@
+:root {
+  --main-bg-color: rgb(12, 80, 255);
+  --main-txt-color: rgb(201, 205, 218);
+  --main-ff: "Nunito", sans-serif;
+  --main-fw: 500;
+  --main-fs: 1rem;
+  --main-opacity: 0.8;
+  --main-lh: 1.5;
+  --large-fs: 1.5rem;
+  --large-fw: 700;
+  --large-lh: 1.3;
+  --title-fw: 800;
+}
+
+body{
+  background-color: var(--main-bg-color)
+
+}
+
+img {
+  
+}
+
+div.App {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  /* width: calc(53% - 10px); */
+}
+
+div {
+  place-items: center;
+  /* border: 5px solid red; */
+}
+
 div > p, h1 {
-  margin-left: 0.5em;
+  justify-content: center;
+  color: var(--main-txt-color);
+  font-family: var(--main-ff);
+}
+
+div > p {
+  font-weight: var(--main-fw);
+  font-size: var(--main-fs);
+  line-height: var(--main-lh);
+  opacity: var(--main-opacity);
+}
+
+div > h1 {
+  font-weight: var(--title-fw);
+
+}
+
+p.large {
+  font-weight: var(--large-fw);
+  font-size: var(--large-fs);
+  line-height: var(--large-lh);
+  opacity: 1;
 }
