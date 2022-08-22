@@ -1,12 +1,16 @@
 import logo from './logo.svg';
+import wrawlogo from './write-and-woodsvg.svg';
 import './App.css';
 
 function App() {
   return (
     <div class="App">
+      <div></div>
+      <div>
+      <img src={wrawlogo} alt="write and wood image logo"/>
       <h1>Wraw: Write and Wood</h1>
       {/* <img src={logo} class="App-logo" alt="logo" /> */}
-      <p>Write and Wood helps you write better and more consistently.</p>
+      <p class="large">Write and Wood helps you write better and more consistently.</p>
       <p>When we think about creative writing, 
         we often believe some people are just born writers. 
          Instead, we should think about all the tools that we currently lack. 
@@ -38,6 +42,8 @@ function App() {
             <p>waiting list</p>
             <p>email: <input type="email"></input> <button type="submit">Join</button></p>
           </div>
+      </div>
+      <div></div>
     </div>
   );
 
