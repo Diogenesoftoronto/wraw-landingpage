@@ -5,10 +5,9 @@ import './App.css';
 function App() {
   return (
     <div class="App">
-      <div></div>
-      <div>
-      <h1>Wraw: Write and Wood</h1>
       {/* <img src={logo} class="App-logo" alt="logo" /> */}
+      <section class="content">
+      <h1>Wraw: Write and Wood</h1>
       <p class="large">Write and Wood helps you write better and more consistently.</p>
       <p>When we think about creative writing, 
         we often believe some people are just born writers. 
@@ -41,9 +40,12 @@ function App() {
             <p>waiting list</p>
             <p>email: <input type="email"></input> <button type="submit">Join</button></p>
           </div>
+      </section>
+      <footer class="app-footer">
+        <p>© 2022 Write and Wood</p>
+        <p>Want to follow <a href="https://t.co/2r05fMI2XZ">us</a>?</p>
+      </footer>
       </div>
-      <div></div>
-    </div>
   );
 
 }
