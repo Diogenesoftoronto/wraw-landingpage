@@ -10,63 +10,47 @@
   --large-fw: 700;
   --large-lh: 1.3;
   --title-fw: 800;
+  --p-width: clamp(40ch, 50%, 75ch)
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 body{
-  background-color: var(--main-bg-color)
-
-}
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("write-and-woodsvg.svg");
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-color: var(--main-bg-color);
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
 
 div.App {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 0.5fr;
+  /* grid-template-columns: 0.5fr 2fr 0.5fr; */
   /* width: calc(53% - 10px); */
 }
 
-div {
+section.content {
+  display: grid;
+  margin-inline: 5rem;
+  place-content: center;
   place-items: center;
-  /* border: 5px solid red; */
 }
 
-div > p, h1 {
-  justify-content: center;
+ p, h1 {
   color: var(--main-txt-color);
   font-family: var(--main-ff);
+  width: var(--p-width);
 }
 
-div > p {
+ p {
   font-weight: var(--main-fw);
   font-size: var(--main-fs);
   line-height: var(--main-lh);
   opacity: var(--main-opacity);
 }
 
-div > h1 {
+ h1 {
   font-weight: var(--title-fw);
-
+  text-align: center;
 }
 
 p.large {
@@ -74,4 +58,5 @@ p.large {
   font-size: var(--large-fs);
   line-height: var(--large-lh);
   opacity: 1;
+  width: clamp(20rem, 50%, 743px);
 }
