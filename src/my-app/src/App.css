@@ -1,9 +1,9 @@
 :root {
-  --main-bg-color: rgb(12, 80, 255);
-  --main-txt-color: rgb(201, 205, 218);
+  --main-bg-color: hsl(223, 100%, 52%);
+  --main-txt-color: hsl(226, 19%, 82%);
   --main-ff: "Nunito", sans-serif;
   --main-fw: 500;
-  --main-fs: 1rem;
+  --main-fs: 1.1rem;
   --main-opacity: 0.8;
   --main-lh: 1.5;
   --large-fs: 1.5rem;
@@ -19,13 +19,6 @@
 
 body{
   background-color: var(--main-bg-color);
-}
-
-
-div.App {
-  display: grid;
-  /* grid-template-columns: 0.5fr 2fr 0.5fr; */
-  /* width: calc(53% - 10px); */
 }
 
 section.content {
@@ -59,4 +52,65 @@ p.large {
   line-height: var(--large-lh);
   opacity: 1;
   width: clamp(20rem, 50%, 743px);
+}
+
+
+section.waiting-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  border-color: burlywood;
+  border-style: solid;
+  gap: 0.1rem;
+  border-width: 1px;
+  padding: 1rem;
+  width: clamp(20rem, 50%, 743px)
+}
+
+footer.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+input {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 6px 3px 8px black; 
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+
+input:hover { 
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+input:invalid {
+  border-color: red;
+  background-color: red;
+
+}
+
+
+p.label, p.large {
+  text-align: center;
+}
+
+button.waiting-list { 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: black; 
+  box-shadow: 5px 5px 5px black; 
+  padding: 0.5rem; 
+  margin: 0.5rem;
+  width: 30%;
+
 }
