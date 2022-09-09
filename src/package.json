@@ -9,7 +9,5 @@
   "author": "diogenesoftoronto",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^10.6.0",
-    "jest": "^28.1.3"
   }
 }
